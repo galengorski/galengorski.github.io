@@ -1,0 +1,38 @@
+---
+title: ""
+output:
+  html_document:
+    css:  index.css
+---
+
+
+<br>
+<br>
+<br>
+
+# Galen Gorski 
+### PhD Candidate 
+### [UC Santa Cruz](https://www.ucsc.edu/) [Earth and Planetary Sciences Deparment](https://eps.ucsc.edu/)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+#### I am interested in issues related to water quantity and quality 
+#### in natural and managed landscapes. 
+#### I work with Andrew Fisher and the rest of the UCSC Hydrogeology Team 
+#### to understand fundemental connections between 
+#### hydrologic and biogeochemical cycling. 
+#### I use a combination of field, lab and modeling methods, 
+#### and I am particularly interested in developing understanding 
+#### at multiple different scales from centimeter to continental.
+
+<br>
+

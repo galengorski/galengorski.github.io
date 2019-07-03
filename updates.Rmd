@@ -1,0 +1,56 @@
+---
+title: ""
+output:
+  html_document:
+    css:  updates.css
+---
+
+<br>
+<br>
+<br>
+<br>
+
+# Updates
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+---
+
+## 6/22/2019
+
+#### With a team of grad students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
+
+<br>
+<br>
+
+## 6/13/2019
+
+#### Finished TAing ESCI100, Intro to Environmental Systems, a calculus based modeling class looking at budgets and environmental processes. We only had four students, so they each got a lot of attention.
+
+<br>
+<br>
+
+## 5/24/2019
+
+#### Gave two talks at the Internationl Symposium for Managed Aquifer Recharge in Madrid. One talk was focused mapping denitrification across landscapes ([_slides here_](files/ISMAR_DenitMapping_Presentation.pdf)) and the other talk was on the recharge suitability web application that I developed ([_slides here_](files/ISMAR_AppPresentation.pdf)). The conference was very international, and it was exciting to see MAR projects from all over the world. It was also held in an old elevator factory!
+
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("images/ISMAR_2019.JPG")
+```
+<br>
+<br>
+
+## 2/5/2019
+
+#### Attending a workshop in Nicosia, Cyprus with regional collaborators to help develop maps and modeling products for groundwater recharge suitability in the Middle East and North Africa. The workshop was part of a larger collaboration between US-AID, USGS, and the countries of Jordan, Lebanon, Palestine and other regional partners. Energizing to talk to folks from other parts of the world interested in similar topics!
+
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("images/CyprusWorkshop.png")
+```
