@@ -1,5 +1,5 @@
 body {
-  background: url("images/SanJuansCropped.gif");
+  background: url("images/RanierCropped.gif");
   background-repeat: no-repeat;
   background-size: 100% 300px;
 }
@@ -36,7 +36,7 @@ h5 {
 }
 
 a:link{
-  color:Black;
+  color:#009FCD;
 }
 
 a:visited{
