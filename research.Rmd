@@ -66,6 +66,6 @@ div.blue { background-color:white; border-radius: 5px; padding: 20px;}
 
 ### Concentration discharge relationships
 
-<img src="images/BowlandPitcher.jpg" style="width:20%; height = 150px; margin-right: 20px" align="right">
+<img src="images/BP.jpg" style="width:20%; height = 150px; margin-right: 20px" align="right">
 
 ##### Concentration discharge (C-Q) relationships in streams and rivers express the tendancy of a catchment to store or transport solutes. On long time scales, the slope of concentration and discharge plotted in log-log space is thought to be near zero (chemostatic). However at shorter time scales (event to seasonal), C-Q relationships can express much more dynamic behavior that can get averaged out over longer time scales. Short term C-Q dynamics are responsive to storm intensity, antecedant moisture, source area landuse and reflect differences between hydrologic routing and biogeochemical cycling across watersheds with different fundemental characteristics. Using publicly available data, we are compiling a database of C-Q relationships at various spatial and temporal scales to better understand how these dynamics can serve as a window into hydrologic and biogeochemical processes across landscapes.
