@@ -22,6 +22,41 @@ output:
 
 
 ---
+## 9/12/2019
+
+<img src="images/Arsenic.gif" style="width:45%; height = 150px; margin-right: 20px" align="right">
+
+#### I submitted a proposal for the NSF post-doctoral scholarship. It's a long shot but I think the project would be pretty cool. I proposed to work with Ben Bostick of Columbia University and Melinda Erickson of University of Minnesota to compare patterns and variability in arsenic contamination in Vietnam and Minnesota using some geophysical methods and a global dataset of groundwater arsenic concentrations.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+## 8/24/2019
+
+#### I just got back from a few weeks visiting [_Rachel Lauer_](https://www.lauer-geofluids.xyz) and her lab group at the University of Calgary. I went up to see how they were using near-surface geophysical techniques in groundwater studies, and to try and learn some methods that could be useful to our work in California. Her lab has a bunch of really cool projects in some beautiful locations!
+
+```{r echo=FALSE, out.width="80%", fig.align='center', fig.cap='Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algea!'}
+knitr::include_graphics("images/CanadaImages.gif")
+```
+
+<br>
+<br>
+
+
+## 7/29/2019
+
+<img src="images/TOC_Figure.gif" style="width:30%; height = 150px; margin-right: 20px" align="right">
+
+#### Check out our [_new paper_](files/Gorski_EST_2019.pdf) looking at denitrification during infiltration. Using a combination of field and lab studies we examine how flow rate and different soil amendments affect denitrification. This has implications for how managed aquifer recharge systems could be built and operated to improve water quality. 
+
+<br>
+<br>
 
 ## 6/22/2019
 

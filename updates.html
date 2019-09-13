@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>updates.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -71,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="updates.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,13 +87,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -109,7 +114,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,6 +133,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -150,19 +191,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -221,27 +316,56 @@ $(document).ready(function () {
 <p><br> <br> <br> <br> <br> <br> <br></p>
 <hr />
 <div id="section" class="section level2">
+<h2>9/12/2019</h2>
+<p><img src="images/Arsenic.gif" style="width:45%; height = 150px; margin-right: 20px" align="right"></p>
+<div id="i-submitted-a-proposal-for-the-nsf-post-doctoral-scholarship.-its-a-long-shot-but-i-think-the-project-would-be-pretty-cool.-i-proposed-to-work-with-ben-bostick-of-columbia-university-and-melinda-erickson-of-university-of-minnesota-to-compare-patterns-and-variability-in-arsenic-contamination-in-vietnam-and-minnesota-using-some-geophysical-methods-and-a-global-dataset-of-groundwater-arsenic-concentrations." class="section level4">
+<h4>I submitted a proposal for the NSF post-doctoral scholarship. It’s a long shot but I think the project would be pretty cool. I proposed to work with Ben Bostick of Columbia University and Melinda Erickson of University of Minnesota to compare patterns and variability in arsenic contamination in Vietnam and Minnesota using some geophysical methods and a global dataset of groundwater arsenic concentrations.</h4>
+<p><br> <br> <br> <br></p>
+</div>
+</div>
+<div id="section-1" class="section level2">
+<h2>8/24/2019</h2>
+<div id="i-just-got-back-from-a-few-weeks-visiting-rachel-lauer-and-her-lab-group-at-the-university-of-calgary.-i-went-up-to-see-how-they-were-using-near-surface-geophysical-techniques-in-groundwater-studies-and-to-try-and-learn-some-methods-that-could-be-useful-to-our-work-in-california.-her-lab-has-a-bunch-of-really-cool-projects-in-some-beautiful-locations" class="section level4">
+<h4>I just got back from a few weeks visiting <a href="https://www.lauer-geofluids.xyz"><em>Rachel Lauer</em></a> and her lab group at the University of Calgary. I went up to see how they were using near-surface geophysical techniques in groundwater studies, and to try and learn some methods that could be useful to our work in California. Her lab has a bunch of really cool projects in some beautiful locations!</h4>
+<div class="figure" style="text-align: center">
+<img src="images/CanadaImages.gif" alt="Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algea!" width="80%" />
+<p class="caption">
+Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algea!
+</p>
+</div>
+<p><br> <br></p>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2>7/29/2019</h2>
+<p><img src="images/TOC_Figure.gif" style="width:30%; height = 150px; margin-right: 20px" align="right"></p>
+<div id="check-out-our-new-paper-looking-at-denitrification-during-infiltration.-using-a-combination-of-field-and-lab-studies-we-examine-how-flow-rate-and-different-soil-amendments-affect-denitrification.-this-has-implications-for-how-managed-aquifer-recharge-systems-could-be-built-and-operated-to-improve-water-quality." class="section level4">
+<h4>Check out our <a href="files/Gorski_EST_2019.pdf"><em>new paper</em></a> looking at denitrification during infiltration. Using a combination of field and lab studies we examine how flow rate and different soil amendments affect denitrification. This has implications for how managed aquifer recharge systems could be built and operated to improve water quality.</h4>
+<p><br> <br></p>
+</div>
+</div>
+<div id="section-3" class="section level2">
 <h2>6/22/2019</h2>
 <div id="with-a-team-of-grad-students-and-professors-helped-andria-green-construct-boardwalks-in-elkhorn-slough.-she-will-be-studying-nitrogen-cycling-dynamics-in-various-tidally-influenced-areas-of-slough." class="section level4">
 <h4>With a team of grad students and professors, helped <a href="https://andigreene.weebly.com/"><em>Andria Green</em></a> construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.</h4>
 <p><br> <br></p>
 </div>
 </div>
-<div id="section-1" class="section level2">
+<div id="section-4" class="section level2">
 <h2>6/13/2019</h2>
 <div id="finished-taing-esci100-intro-to-environmental-systems-a-calculus-based-modeling-class-looking-at-budgets-and-environmental-processes.-we-only-had-four-students-so-they-each-got-a-lot-of-attention." class="section level4">
 <h4>Finished TAing ESCI100, Intro to Environmental Systems, a calculus based modeling class looking at budgets and environmental processes. We only had four students, so they each got a lot of attention.</h4>
 <p><br> <br></p>
 </div>
 </div>
-<div id="section-2" class="section level2">
+<div id="section-5" class="section level2">
 <h2>5/24/2019</h2>
 <div id="gave-two-talks-at-the-internationl-symposium-for-managed-aquifer-recharge-in-madrid.-one-talk-was-focused-mapping-denitrification-across-landscapes-slides-here-and-the-other-talk-was-on-the-recharge-suitability-web-application-that-i-developed-slides-here.-the-conference-was-very-international-and-it-was-exciting-to-see-mar-projects-from-all-over-the-world.-it-was-also-held-in-an-old-elevator-factory" class="section level4">
 <h4>Gave two talks at the Internationl Symposium for Managed Aquifer Recharge in Madrid. One talk was focused mapping denitrification across landscapes (<a href="files/ISMAR_DenitMapping_Presentation.pdf"><em>slides here</em></a>) and the other talk was on the recharge suitability web application that I developed (<a href="files/ISMAR_AppPresentation.pdf"><em>slides here</em></a>). The conference was very international, and it was exciting to see MAR projects from all over the world. It was also held in an old elevator factory!</h4>
 <p><img src="images/ISMAR_2019.JPG" width="50%" style="display: block; margin: auto;" /> <br> <br></p>
 </div>
 </div>
-<div id="section-3" class="section level2">
+<div id="section-6" class="section level2">
 <h2>2/5/2019</h2>
 <div id="attending-a-workshop-in-nicosia-cyprus-with-regional-collaborators-to-help-develop-maps-and-modeling-products-for-groundwater-recharge-suitability-in-the-middle-east-and-north-africa.-the-workshop-was-part-of-a-larger-collaboration-between-us-aid-usgs-and-the-countries-of-jordan-lebanon-palestine-and-other-regional-partners.-energizing-to-talk-to-folks-from-other-parts-of-the-world-interested-in-similar-topics" class="section level4">
 <h4>Attending a workshop in Nicosia, Cyprus with regional collaborators to help develop maps and modeling products for groundwater recharge suitability in the Middle East and North Africa. The workshop was part of a larger collaboration between US-AID, USGS, and the countries of Jordan, Lebanon, Palestine and other regional partners. Energizing to talk to folks from other parts of the world interested in similar topics!</h4>
@@ -267,6 +391,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 
 </body>
