@@ -41,7 +41,7 @@ output:
 
 #### I just got back from a few weeks visiting [_Rachel Lauer_](https://www.lauer-geofluids.xyz) and her lab group at the University of Calgary. I went up to see how they were using near-surface geophysical techniques in groundwater studies, and to try and learn some methods that could be useful to our work in California. Her lab has a bunch of really cool projects in some beautiful locations!
 
-```{r echo=FALSE, out.width="80%", fig.align='center', fig.cap='Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algea!'}
+```{r echo=FALSE, out.width="80%", fig.align='center', fig.cap='Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algae!'}
 knitr::include_graphics("images/CanadaImages.gif")
 ```
 
