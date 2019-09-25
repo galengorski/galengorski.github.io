@@ -60,7 +60,7 @@ knitr::include_graphics("images/CanadaImages.gif")
 
 ## 6/22/2019
 
-#### With a team of grad students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
+#### With a team of graduate students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
 
 <br>
 <br>
