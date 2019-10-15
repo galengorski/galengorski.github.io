@@ -22,6 +22,20 @@ output:
 
 
 ---
+## 10/13/2019
+
+<img src="images/ElkGrove.gif" style="width:70%; height = 200px; margin-right: 20px" align="left">
+
+#### Along with a team from the Hydrogeology group including [_Adam Price_](https://adamnicholasprice.github.io/), Victor Bautista, Andrew Fisher and Jenny Pensky, I spent the day at a vineyard near Sacremento, CA. The vineyard is a site selected for one of the first flood managed aquifer recharge (F-MAR) projects in the region. During the rainy season about 1000 acres of the vineyard will be flooded with excess flows from the nearby Consumnes River in an effort to recharge the underlying aquifers. It's the first project of its scale in the area, and if it's succsessful, there are likley to be many more like it in the future. Led by Jenny (at the top of the ladder), we helped collect sediment cores that she will analyze and conduct experiments on to investigate changes in fluid geochemistry during infiltration.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
 ## 9/12/2019
 
 <img src="images/Arsenic.gif" style="width:45%; height = 150px; margin-right: 20px" align="right">
@@ -41,7 +55,7 @@ output:
 
 #### I just got back from a few weeks visiting [_Rachel Lauer_](https://www.lauer-geofluids.xyz) and her lab group at the University of Calgary. I went up to see how they were using near-surface geophysical techniques in groundwater studies, and to try and learn some methods that could be useful to our work in California. Her lab has a bunch of really cool projects in some beautiful locations!
 
-```{r echo=FALSE, out.width="80%", fig.align='center', fig.cap='Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD candidate Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algae!'}
+```{r echo=FALSE, out.width="80%", fig.align='center', fig.cap='Upperleft: ERT lines collected to image soap hole plumbing. Lowerleft: CO2 injection site near Brooks, AB where U Calgary runs its geophysics field school. Right: PhD student Tom Wilson sampling geothermal water in Banff National Park. The white stuff is algea!'}
 knitr::include_graphics("images/CanadaImages.gif")
 ```
 
@@ -60,7 +74,7 @@ knitr::include_graphics("images/CanadaImages.gif")
 
 ## 6/22/2019
 
-#### With a team of graduate students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
+#### With a team of grad students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
 
 <br>
 <br>
