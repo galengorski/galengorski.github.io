@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>research.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -71,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="research.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,13 +87,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -109,7 +114,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,6 +133,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -150,19 +191,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -232,7 +327,7 @@ $(document).ready(function () {
 div.blue { background-color:white; border-radius: 5px; padding: 20px;}
 </style>
 <div class="blue">
-<h5 id="denitrification-and-other-biogeochemical-processes-vary-from-site-to-site-based-on-a-host-of-factors-including-soil-grain-size-available-organic-carbon-precipiation-climate-water-chemistry-microbial-community-structure-and-many-others.-this-makes-it-difficult-to-develop-process-based-models-that-are-robust-at-scales-larger-than-a-field-site-as-these-factors-have-considerable-spatial-variability.-to-address-this-we-leverage-the-measurements-that-we-have-collected-at-multiple-field-sites-to-develop-a-modeling-framework-that-combines-a-process-based-understanding-with-machine-learning-methods-to-understand-how-denitrification-varies-across-landscapes-under-varying-climatic-conditions.-for-more-information-see-these-slides-that-i-presented-at-the-international-symposium-on-managed-aquifer-recharge-in-madrid-in-may-2019.">Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. For more information see <a href="files/ISMAR_DenitMapping_Presentation.pdf"><em>these slides</em></a> that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019.</h5>
+<h5 id="denitrification-and-other-biogeochemical-processes-vary-from-site-to-site-based-on-a-host-of-factors-including-soil-grain-size-available-organic-carbon-precipiation-climate-water-chemistry-microbial-community-structure-and-many-others.-this-makes-it-difficult-to-develop-process-based-models-that-are-robust-at-scales-larger-than-a-field-site-as-these-factors-have-considerable-spatial-variability.-to-address-this-we-leverage-the-measurements-that-we-have-collected-at-multiple-field-sites-to-develop-a-modeling-framework-that-combines-a-process-based-understanding-with-machine-learning-methods-to-understand-how-denitrification-varies-across-landscapes-under-varying-climatic-conditions.-for-more-information-see-these-slides-that-i-presented-at-the-international-symposium-on-managed-aquifer-recharge-in-madrid-in-may-2019.-see-also-my-poster-from-agu-2019.">Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. For more information see <a href="files/ISMAR_DenitMapping_Presentation.pdf"><em>these slides</em></a> that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019. See also <a href="files/AGU_2019_poster.png"><em>my poster from AGU 2019</em></a>.</h5>
 </div>
 <p><br> <br> <br></p>
 <hr />
@@ -241,8 +336,8 @@ div.blue { background-color:white; border-radius: 5px; padding: 20px;}
 <div id="groundwater-recharge-suitability-mapping-in-the-mena-region" class="section level3">
 <h3>Groundwater recharge suitability mapping in the MENA region</h3>
 <p><img src="images/JordanWadi.jpg" style="width:20%; height = 150px; margin-right: 20px" align="left"></p>
-<div id="in-an-effort-to-increaase-their-water-security-many-countries-in-arid-regions-of-the-world-such-as-the-middle-east-and-north-africa-mena-are-implementing-projects-to-increase-groundwater-supply-and-storage.-i-have-been-working-as-a-nsf-grip-intern-with-an-international-team-from-jordan-lebanon-egypt-the-netherlands-and-the-usa-usgs-to-develop-regional-suitability-maps-to-highlight-promising-locations-for-managed-recharge-projects.-the-maps-take-into-account-various-physical-climatic-and-socio-economic-parameters-which-are-aggregated-and-weighted-based-on-local-proirities-to-create-a-composite-suitability-map.-i-have-developed-a-web-application-to-produce-suitability-maps-which-allows-the-user-to-adjust-the-weights-and-aggregating-schemes-and-see-the-results-in-real-time.-here-is-a-link-to-the-app-and-here-is-a-link-to-slides-that-i-presented-at-the-international-symposium-on-managed-aquifer-recharge-in-madrid-in-may-2019." class="section level5">
-<h5>In an effort to increaase their water security, many countries in arid regions of the world such as the Middle East and North Africa (MENA) are implementing projects to increase groundwater supply and storage. I have been working as a NSF-GRIP intern with an international team from Jordan, Lebanon, Egypt, the Netherlands and the USA (USGS) to develop regional suitability maps to highlight promising locations for managed recharge projects. The maps take into account various physical, climatic and socio-economic parameters which are aggregated and weighted based on local proirities to create a composite suitability map. I have developed a web application to produce suitability maps which allows the user to adjust the weights and aggregating schemes and see the results in real time. Here is a link to the app and <a href="files/ISMAR_AppPresentation.pdf"><em>here is a link</em></a> to slides that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019.</h5>
+<div id="in-an-effort-to-increase-their-water-security-many-countries-in-arid-regions-of-the-world-such-as-the-middle-east-and-north-africa-mena-are-implementing-projects-to-increase-groundwater-supply-and-storage.-i-have-been-working-as-a-nsf-grip-intern-with-an-international-team-from-jordan-lebanon-egypt-the-netherlands-and-the-usa-usgs-to-develop-regional-suitability-maps-to-highlight-promising-locations-for-managed-recharge-projects.-the-maps-take-into-account-various-physical-climatic-and-socio-economic-parameters-which-are-aggregated-and-weighted-based-on-local-proirities-to-create-a-composite-suitability-map.-i-have-developed-a-web-application-to-produce-suitability-maps-which-allows-the-user-to-adjust-the-weights-and-aggregating-schemes-and-see-the-results-in-real-time.-here-is-a-link-to-the-app-and-here-is-a-link-to-slides-that-i-presented-at-the-international-symposium-on-managed-aquifer-recharge-in-madrid-in-may-2019." class="section level5">
+<h5>In an effort to increase their water security, many countries in arid regions of the world such as the Middle East and North Africa (MENA) are implementing projects to increase groundwater supply and storage. I have been working as a NSF-GRIP intern with an international team from Jordan, Lebanon, Egypt, the Netherlands and the USA (USGS) to develop regional suitability maps to highlight promising locations for managed recharge projects. The maps take into account various physical, climatic and socio-economic parameters which are aggregated and weighted based on local proirities to create a composite suitability map. I have developed a web application to produce suitability maps which allows the user to adjust the weights and aggregating schemes and see the results in real time. Here is a link to the app and <a href="files/ISMAR_AppPresentation.pdf"><em>here is a link</em></a> to slides that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019.</h5>
 <p><br> <br> <br></p>
 <hr />
 </div>
@@ -273,6 +368,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 
 </body>
