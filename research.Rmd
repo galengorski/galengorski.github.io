@@ -21,30 +21,49 @@ output:
 
 
 ---
-### Denitrification during managed aquifer recharge
+### Measuring denitrification during managed aquifer recharge
 
 <img src="images/PlotSampling.png" style="width:25%; height = 150px; margin-right: 20px" align="left">
 
 
-##### Managed aquifer recharge (MAR) is an common technique for augmenting groundwater supplies, but it is important to ensure that the water used for infiltration doesn't harm ambient groundwater quality. Under certain conditions, contaminants such as nitrate (NO~3~) can be removed as water infiltrates through shallow soils during MAR via a process called denitrification. Through lab, field, and modeling studies we are investigating how controlling factors such as infiltration rate and the amount of labile carbon can affect denitrification during infiltration. For more information see our recent publication [_Beganskas et al 2018_](files/Beganskas_WR_2019.pdf) more to come soon!
+##### Managed aquifer recharge (MAR) is an common technique for augmenting groundwater supplies, but it is important to ensure that the water used for infiltration doesn't harm ambient groundwater quality. Under certain conditions, contaminants such as nitrate (NO~3~) can be removed as water infiltrates through shallow soils during MAR via a process called denitrification. Through lab, field, and modeling studies we are investigating how controlling factors such as infiltration rate and the amount of labile carbon can affect denitrification during infiltration. 
 
 <br>
 <br>
+
+**Gorski G.**, Fisher A.T., Beganskas S., Weir W., Redford K., Schmidt C., Saltikov C. (2019) Field and laboratory studies linking hydrologic, geochemical, and microbiological processes and enhanced denitrification during infiltration for managed recharge. *Environmental Science and Technology* [[_pdf_](files/Gorski_EST_2019.pdf)]
+[[_link_](https://pubs.acs.org/doi/10.1021/acs.est.9b01191)]
+
+
+Beganskas S., **Gorski G.**,Weathers T., Fisher A.T., Schmidt C., Saltikov C.W., Redford K., Stoneburner B., Harmon R., Weir W. (2018) A horizontal permeable reactive barrier stimulates nitrate removal and shifts microbial ecology during rapid infiltration for managed recharge. *Water Research* [[_pdf_](files/Beganskas_WR_2019.pdf)]
+[[_link_](https://doi.org/10.1016/j.watres.2018.07.039)]
+
+<br>
+<br>
+
+********
+### Developing landscape scale models using experimental data
 
 <img src="images/ModelingFramework.gif" style="width:25%; height = 150px; margin-left: 20px" align="right">
 
 <br>
 <br>
-<style>
-div.blue { background-color:white; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
+<!-- <style> -->
+<!-- div.blue { background-color:white; border-radius: 5px; padding: 20px;} -->
+<!-- </style> -->
+<!-- <div class = "blue"> -->
 
 
 
-##### Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. For more information see [_these slides_](files/ISMAR_DenitMapping_Presentation.pdf) that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019. See also [_my poster from AGU 2019_](files/AGU_2019_Poster.png).
+##### Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. 
 
-</div>
+
+**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Characterizing spatial variability in denitrification potential under heterogeneous land use and precipitation patterns. *Poster presentation at AGU Fall Meeting 2019* [[_pdf_](files/AGU_2019_Poster.png)]
+
+**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Using machine learning to incorporate potential water quality improvements for mapping MAR suitability. *Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/Gorski_ISMAR_DenitMapping_Presentation.pdf)]
+
+
+<!-- </div> -->
 <br>
 <br>
 <br>
@@ -55,7 +74,13 @@ div.blue { background-color:white; border-radius: 5px; padding: 20px;}
 
 <img src="images/JordanWadi.jpg" style="width:20%; height = 150px; margin-right: 20px" align="left">
 
-##### In an effort to increase their water security, many countries in arid regions of the world such as the Middle East and North Africa (MENA) are implementing projects to increase groundwater supply and storage. I have been working as a NSF-GRIP intern with an international team from Jordan, Lebanon, Egypt, the Netherlands and the USA (USGS) to develop regional suitability maps to highlight promising locations for managed recharge projects. The maps take into account various physical, climatic and socio-economic parameters which are aggregated and weighted based on local proirities to create a composite suitability map. I have developed a web application to produce suitability maps which allows the user to adjust the weights and aggregating schemes and see the results in real time. Here is a link to the app and [_here is a link_](files/ISMAR_AppPresentation.pdf) to slides that I presented at the International Symposium on Managed Aquifer Recharge in Madrid in May 2019.
+##### In an effort to increase their water security, many countries in arid regions of the world such as the Middle East and North Africa (MENA) are implementing projects to increase groundwater supply and storage. I have been working as a NSF-GRIP intern with an international team from Jordan, Lebanon, Egypt, the Netherlands and the USA (USGS) to develop regional suitability maps to highlight promising locations for managed recharge projects. The maps take into account various physical, climatic and socio-economic parameters which are aggregated and weighted based on local proirities to create a composite suitability map. As part of this effort, I have developed a web application to produce suitability maps which allows the user to adjust the weights and aggregating schemes and see the results in real time.
+
+The tool is called **M**ulti-factor **A**nalysis for **R**echarge **Map**ping **S**uitability (MARMapS) -- [_https://ggorski.shinyapps.io/marmaps/_](https://ggorski.shinyapps.io/marmaps/)
+
+More information can be found on [_my github page_](https://github.com/galengorski/MARMapS)
+
+**Gorski, G.,** van der Valk, M. Producing more interpretable maps of managed aquifer recharge suitability by visualizing sensitivity to subjective choices during mapmaking.*Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/ISMAR_AppPresentation.pdf)] 
 
 
 <br>
