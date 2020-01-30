@@ -37,10 +37,10 @@ h5 {
 }
 
 a:link{
-  color:Black;
+  color:Red;text-decoration:none;
 }
 
-a:visited{
-  color:Black;
+a:visited {
+  color: Red;text-decoration:none;
 }
 

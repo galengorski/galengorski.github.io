@@ -22,6 +22,34 @@ output:
 
 
 ---
+## 1/20/2020
+
+<img src="images/AppFigure.gif" style="width:70%; height = 200px; margin-right: 20px" align="left">
+
+#### As a part of the NSF-funded Graduate Research Internship Program (GRIP), I have been participating in an internship project that is a collaboration between the USGS, US-AID, and the governments of Lebanon and Jordan. The project aims to select sites for development of aquifer storage and recovery projects in an effort to increase water security in the region. As part of the project, I have developed a site suitability mapping application called MARMapS, that helps facilitate the creation of multi-factor suitability maps. I published it online at [_https://ggorski.shinyapps.io/marmaps/_](https://ggorski.shinyapps.io/marmaps/), check it out and play around with it. The code and user tutorials can be found on my [_github page_](https://github.com/galengorski/MARMapS).
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+## 12/10/2019
+<img src="images/AGU_2019.gif" style="width:20%; height = 75px; margin-left: 20px" align="right">
+
+#### AGU was back in San Francisco this year, and I presented a poster based on the third chapter of my thesis entitled *Characterizing spatial variability in denitrification potential during infiltration under heterogeneous landuse and precipitation patterns*. [_See the poster here_](files/AGU_2019_Poster.png). There were also great posters from [_Jenny Pensky_](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/544063) and [_Araceli Serrano_](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/590977) that focused on changes in water quality during infiltration for managed recharge.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
 ## 10/13/2019
 
 <img src="images/ElkGrove.gif" style="width:70%; height = 200px; margin-right: 20px" align="left">
