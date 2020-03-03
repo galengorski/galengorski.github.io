@@ -22,6 +22,19 @@ output:
 
 
 ---
+## 3/2/2020
+<img src="images/SCMonthlyPrecip.gif" style="width:40%; height = 100px; margin-right: 20px" align="right">
+
+#### As of the end of February Santa Cruz has received 4,280 mm of precipitation in water year 2020, that's just 75% of our average annual value up to that date. In Santa Cruz, January and February are generally our wettest months accounting for almost 40% of the annual rainfall on average. February was really dry (and beautiful), making it feel like it has been a particularly dry year overall, but I think this might just be a function of recency bias. January was a little below average for the area, and December was anomalously wet. In places like California, where extremes in precipitation are the expectation, it can be hard to gauge how far we've deviated from the norm without looking at the numbers. Global climate models can't seem to agree on where we will see increases and decreases in overall precipiation with climate change, but there is concensus that intensity and variability of hydrologic extremes will continue to increase. 
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
 ## 1/20/2020
 
 <img src="images/AppFigure.gif" style="width:70%; height = 200px; margin-right: 20px" align="left">
