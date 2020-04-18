@@ -39,12 +39,6 @@ output:
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 
 <img src="images/water_data/monthly_precip.jpeg" style="width:60%; height = 100px; margin-left: 20px" align="left">
 
