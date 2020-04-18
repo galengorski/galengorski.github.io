@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>making precipitation plots with the rnoaa package</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="updates.html">Updates</a>
+</li>
+<li>
+  <a href="waterpage.html">Current Water Conditions</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="files/Gorski_CV.pdf">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://github.com/galengorski">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">making precipitation plots with the rnoaa package</h1>
+
+</div>
+
+
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<p>This is the code used to make the plots shown here</p>
+<pre class="r"><code>#install.packages(&#39;rnoaa&#39;)
+library(rnoaa)
+#install.packages(&#39;dplyr&#39;)
+library(dplyr)
+#install.packages(&#39;tidyverse&#39;)
+library(tidyverse)</code></pre>
+</div>
+<div id="downloading-the-data" class="section level2">
+<h2>Downloading the data</h2>
+<p>List your sites of interest</p>
+<pre class="r"><code>#Sites of interest
+sites &lt;- c(&#39;USC00047916&#39;,&#39;USW00023259&#39;)
+cities &lt;- c(&#39;Santa Cruz&#39;,&#39;Monterey&#39;)
+
+#get the current year
+current.year &lt;- format(Sys.Date(), format = &#39;%Y&#39;)
+
+#get the current month
+current.month &lt;- format(Sys.Date(), format = &#39;%m&#39;)
+
+#set the current water year
+if(current.month == &#39;10&#39; | current.month == &#39;11&#39;|current.month == &#39;12&#39;){
+current.wateryear &lt;- as.character(as.numeric(current.year)+1)
+}else{
+  current.wateryear &lt;- current.year
+}</code></pre>
+<p>Use the <code>meteo_pull_monitors</code> fucntion from the rnoaa package to download both the historical data and the data for just water year 2020</p>
+<pre class="r"><code>#clear your cache, this is where the data will be stored
+#meteo_clear_cache()
+
+#pull the precip data for both sites at once for 1980 to the present day
+all.stat &lt;- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = &#39;1980-10-01&#39;, date_max = Sys.Date(), var = &#39;PRCP&#39;)
+
+#pull the precip data for both sites at once for just the last water year -- sort of redundant but keeps it cleaner I think
+ytd &lt;- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = &#39;2019-10-01&#39;, date_max = Sys.Date(), var = &#39;PRCP&#39;)</code></pre>
+</div>
+<div id="plotting-the-data" class="section level2">
+<h2>Plotting the data</h2>
+<p>I used for loops, there are probably much more efficient ways to do this, but this worked out ok</p>
+<pre class="r"><code>#make two rows with one column
+par(mfrow = c(2,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))
+#loop through the sites
+for(i in 1:length(sites)){
+#subset the sites
+site &lt;- all.stat %&gt;% filter(id == unique(all.stat$id)[i])
+#create a julian day column
+site$jday &lt;- format(strptime(site$date, format = &#39;%Y-%m-%d&#39;), format = &#39;%j&#39;)
+#convert NAs to zeros
+site[which(is.na(site$prcp)),&#39;prcp&#39;] &lt;- 0
+#take average from 1980-2020 by day
+site.jday.mean &lt;- aggregate(site$prcp, by = list(site$jday), FUN = &#39;mean&#39;)
+#convert julian day to water day
+site.jday.mean$wday &lt;- c(94:366,1:93)
+#take the mean of each day
+site.jday.mean &lt;- site.jday.mean[order(site.jday.mean$wday),]
+
+#now deal with the year to date data -- subset by site and date
+site.ytd &lt;- all.stat %&gt;% filter(id == unique(all.stat$id)[i] &amp; date &gt; as.POSIXct(&#39;2019-10-01&#39;))
+#generate a julian day
+site.ytd$jday &lt;- format(strptime(site.ytd$date, format = &#39;%Y-%m-%d&#39;), format = &#39;%j&#39;)
+#convert any nas to 0
+site.ytd[which(is.na(site.ytd$prcp)),&#39;prcp&#39;] &lt;- 0
+
+#now deal with water year 2019 -- subset by site and date
+site.2019 &lt;- all.stat %&gt;% filter(id == unique(all.stat$id)[i] &amp; date &gt; as.POSIXct(&#39;2018-10-01&#39;) &amp; date &lt;= as.POSIXct(&#39;2019-10-01&#39;))
+#create a julian day
+site.2019$jday &lt;- format(strptime(site.2019$date, format = &#39;%Y-%m-%d&#39;), format = &#39;%j&#39;)
+#convert nas to 0
+site.2019[which(is.na(site.2019$prcp)),&#39;prcp&#39;] &lt;- 0
+
+#now plot first the mean data
+plot(cumsum(site.jday.mean$x)/10, main = paste0(cities[i],&#39;, CA&#39;), typ = &#39;l&#39;, lwd = 3, ylim = c(0,1000), las = 1, xlab = &#39;Water Day&#39;, ylab = &#39;Precipitation (mm)&#39;, axes = F)
+#then add water year 2020
+lines(cumsum(site.ytd$prcp/10), col = &#39;dodgerblue&#39;, lwd = 3)
+#then add water year 2019
+lines(cumsum(site.2019$prcp/10), col = &#39;#65B59A&#39;, lwd = 3)
+#add a legend 
+legend(&#39;topleft&#39;, col = c(&#39;dodgerblue&#39;,&#39;#65B59A&#39;, &#39;black&#39;), lty = c(1,1,1), lwd = c(3,3,3), bty = &#39;n&#39;, legend = c(paste(&#39;WY-2020 (through &#39;,Sys.Date(),&#39;)&#39;,sep = &#39;&#39;),&#39;WY-2019&#39;, &#39;Average&#39;))
+#add custom axes for fun
+axis(1, labels = T, tck = 0.02)
+axis(2, labels = T, tck = 0.02, las = 1)
+axis(3, at = c(1,32,61,92,124,152,183,213,244,274,304,336,365), 
+     labels = c(&#39;&#39;,&#39;Nov.&#39;,&#39;&#39;,&#39;Jan.&#39;,&#39;&#39;,&#39;Mar.&#39;,&#39;&#39;,&#39;May&#39;,&#39;&#39;,&#39;Jul.&#39;,&#39;&#39;,&#39;Sep.&#39;,&#39;&#39;), tck = 0.02)
+axis(4, at = c(0,254,508,762,1016), labels = seq(0,40,10), tck = 0.02, las = 1)
+#add an axis label on the secondary y-axis
+mtext(side = 4, line = 1.5, &#39;Precipitation (in)&#39;, cex = 1)
+box()
+}</code></pre>
+<p><img src="precip_plotting_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>I split up the records by month, to look at the data in a different way</p>
+<pre class="r"><code>#create a tibble for just Santa Cruz
+site &lt;- all.stat %&gt;% filter(id == unique(all.stat$id)[1])
+#make column for the month and year  
+site$myr &lt;- format(strptime(site$date, format = &#39;%Y-%m-%d&#39;), format = &#39;%m-%Y&#39;)
+#convert nas to 0s  
+site[which(is.na(site$prcp)),&#39;prcp&#39;] &lt;- 0
+#take the mean by each year.month  
+site.myr.mean &lt;- aggregate(site$prcp, by = list(site$myr), FUN = &#39;sum&#39;)
+  
+  #split them into their own tibbles, done manually here, probably could improve with an lapply     function
+  oct.myr &lt;- site.myr.mean[grepl(&#39;10-&#39;,site.myr.mean$Group.1),]
+  nov.myr &lt;- site.myr.mean[grepl(&#39;11-&#39;,site.myr.mean$Group.1),]
+  dec.myr &lt;- site.myr.mean[grepl(&#39;12-&#39;,site.myr.mean$Group.1),]
+  jan.myr &lt;- site.myr.mean[grepl(&#39;01-&#39;,site.myr.mean$Group.1),]
+  feb.myr &lt;- site.myr.mean[grepl(&#39;02-&#39;,site.myr.mean$Group.1),]
+  mar.myr &lt;- site.myr.mean[grepl(&#39;03-&#39;,site.myr.mean$Group.1),]
+  apr.myr &lt;- site.myr.mean[grepl(&#39;04-&#39;,site.myr.mean$Group.1),]
+  may.myr &lt;- site.myr.mean[grepl(&#39;05-&#39;,site.myr.mean$Group.1),]
+  jun.myr &lt;- site.myr.mean[grepl(&#39;06-&#39;,site.myr.mean$Group.1),]
+  jul.myr &lt;- site.myr.mean[grepl(&#39;07-&#39;,site.myr.mean$Group.1),]
+  aug.myr &lt;- site.myr.mean[grepl(&#39;08-&#39;,site.myr.mean$Group.1),]
+  sep.myr &lt;- site.myr.mean[grepl(&#39;09-&#39;,site.myr.mean$Group.1),]
+
+#plot them up
+  par(mgp = c(3,1,0), mfrow = c(1,1))
+  boxplot(oct.myr$x, nov.myr$x, dec.myr$x,jan.myr$x,feb.myr$x, mar.myr$x,
+          apr.myr$x, may.myr$x, jun.myr$x, jul.myr$x, aug.myr$x, sep.myr$x,
+          names = c(&#39;October&#39;,&#39;November&#39;,&#39;December&#39;,&#39;January&#39;,&#39;February&#39;,&#39;March&#39;,
+                    &#39;April&#39;,&#39;May&#39;,&#39;June&#39;,&#39;July&#39;,&#39;August&#39;,&#39;September&#39;), las = 1, axes = F,
+          main = &#39;Average Monthly Precipitation \n 1980-2020&#39;, ylim = c(0,5000), ylab = &#39;Precipitation (mm)&#39;,
+          colMed = &#39;lightgray&#39;,
+          col = &#39;transparent&#39;)
+  
+  
+  points(1,oct.myr[grepl(paste(&#39;-&#39;,as.numeric(current.wateryear)-1, sep = &#39;&#39;) , oct.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(2,nov.myr[grepl(paste(&#39;-&#39;,as.numeric(current.wateryear)-1, sep = &#39;&#39;) , nov.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(3,dec.myr[grepl(paste(&#39;-&#39;,as.numeric(current.wateryear)-1, sep = &#39;&#39;) , dec.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(4,jan.myr[grepl(current.wateryear, jan.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(5,feb.myr[grepl(current.wateryear, feb.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(6,mar.myr[grepl(current.wateryear, mar.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  points(7,apr.myr[grepl(current.wateryear, apr.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  # points(8,may.myr[grepl(current.wateryear, may.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  # points(9,jun.myr[grepl(current.wateryear, jun.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  # points(10,jul.myr[grepl(current.wateryear, jul.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  # points(11,aug.myr[grepl(current.wateryear, aug.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  # points(12,sep.myr[grepl(current.wateryear, sep.myr$Group.1),]$x, bg = &#39;dodgerblue&#39;, pch = 21, cex = 1.5)
+  
+  axis(2, tck = 0.02, labels = T, las = 1)
+  axis(1, tck = 0.02, labels = c(&#39;Oct&#39;,&#39;Nov&#39;,&#39;Dec&#39;,&#39;Jan&#39;,&#39;Feb&#39;,&#39;Mar&#39;,
+                                 &#39;Apr&#39;,&#39;May&#39;,&#39;Jun&#39;,&#39;Jul&#39;,&#39;Aug&#39;,&#39;Sep&#39;), at = c(1:12))
+  legend(&#39;topleft&#39;, pch = 16, col = &#39;dodgerblue&#39;, cex = 1, legend = &#39;Water Year-2020&#39;, bty = &#39;n&#39;)
+  box()</code></pre>
+<p><img src="precip_plotting_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

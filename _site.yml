@@ -17,6 +17,8 @@ navbar:
       href: research.html
     - text: 'Updates'
       href: updates.html
+    - text: 'Current Water Conditions'
+      href: waterpage.html
     - text: 'Contact'
       href: contact.html
     - text: "CV"

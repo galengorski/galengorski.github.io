@@ -1,0 +1,51 @@
+---
+title: ""
+output:
+  html_document:
+    css:  waterpage.css
+---
+
+<br>
+<br>
+<br>
+<br>
+
+# Water conditions in Santa Cruz
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### This page is under construction and there is more to come
+
+---
+<img src="images/water_data/cum_precip.jpeg" style="width:70%; height = 150px; margin-right: 20px" align="right">
+
+<br>
+<br>
+<br>
+<br>
+
+
+#### In many parts of the world water accounting is done based on the Water Year and not the traditional calendar year. The Water Year begins on October 1st and extends to September 30th of the next year. The plots to the right show the cumulative amount of precipitation in Santa Cruz and Monterey, California during Water Year 2019 (which began on 10-01-2019). They also show Water Year 2020 and the average of Water Years from 1980-2020. These plots will be continually updated throughtout the year to show how our current Water Year is tracking with the historical record!
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<img src="images/water_data/monthly_precip.jpeg" style="width:60%; height = 100px; margin-left: 20px" align="left">
+
+#### Monthly precipitation totals for Santa Cruz. 2020 has been all over the place! Find the code for these plots [_here_](precip_plotting.html)
