@@ -313,18 +313,15 @@ $(document).ready(function () {
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is the code used to make the plots shown here</p>
+<p>Install packages</p>
 <pre class="r"><code>#install.packages(&#39;rnoaa&#39;)
 library(rnoaa)
 #install.packages(&#39;dplyr&#39;)
 library(dplyr)
 #install.packages(&#39;tidyverse&#39;)
 library(tidyverse)</code></pre>
-</div>
-<div id="downloading-the-data" class="section level2">
-<h2>Downloading the data</h2>
+<div id="downloading-the-data" class="section level3">
+<h3>Downloading the data</h3>
 <p>List your sites of interest</p>
 <pre class="r"><code>#Sites of interest, these can be vectors of sites, I&#39;ll just do Santa Cruz here
 sites &lt;- c(&#39;USC00047916&#39;)
@@ -352,8 +349,8 @@ all.stat &lt;- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = &#39;19
 #pull the precip data for both sites at once for just the last water year -- sort of redundant but keeps it cleaner I think
 ytd &lt;- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = &#39;2019-10-01&#39;, date_max = Sys.Date(), var = &#39;PRCP&#39;)</code></pre>
 </div>
-<div id="plotting-the-data" class="section level2">
-<h2>Plotting the data</h2>
+<div id="plotting-the-data" class="section level3">
+<h3>Plotting the data</h3>
 <p>I orginally wrote this in a for loop as I was comparing several sites, right now there is only one site, but I left the for loop structure in case it might be useful to see how it could be adapted to more sites.</p>
 <pre class="r"><code>#make two rows with one column
 par(mfrow = c(1,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))

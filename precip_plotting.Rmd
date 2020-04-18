@@ -7,9 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is the code used to make the plots shown here
+Install packages
 ```{r cars, eval = T, message = F}
 #install.packages('rnoaa')
 library(rnoaa)
@@ -21,7 +19,7 @@ library(tidyverse)
 
 ```
 
-## Downloading the data
+### Downloading the data
 
 List your sites of interest
 ```{r}
@@ -57,7 +55,7 @@ ytd <- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = '2019-10-01', d
 
 ```
 
-## Plotting the data
+### Plotting the data
 
 I orginally wrote this in a for loop as I was comparing several sites, right now there is only one site, but I left the for loop structure in case it might be useful to see how it could be adapted to more sites.
 
