@@ -25,9 +25,9 @@ library(tidyverse)
 
 List your sites of interest
 ```{r}
-#Sites of interest
-sites <- c('USC00047916','USW00023259')
-cities <- c('Santa Cruz','Monterey')
+#Sites of interest, these can be vectors of sites, I'll just do Santa Cruz here
+sites <- c('USC00047916')
+cities <- c('Santa Cruz')
 
 #get the current year
 current.year <- format(Sys.Date(), format = '%Y')
@@ -59,12 +59,12 @@ ytd <- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = '2019-10-01', d
 
 ## Plotting the data
 
-I used for loops, there are probably much more efficient ways to do this, but this worked out ok
+I orginally wrote this in a for loop as I was comparing several sites, right now there is only one site, but I left the for loop structure in case it might be useful to see how it could be adapted to more sites.
 
 ```{r, echo=T, fig.height = 7}
 
 #make two rows with one column
-par(mfrow = c(2,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))
+par(mfrow = c(1,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))
 #loop through the sites
 for(i in 1:length(sites)){
 #subset the sites

@@ -326,9 +326,9 @@ library(tidyverse)</code></pre>
 <div id="downloading-the-data" class="section level2">
 <h2>Downloading the data</h2>
 <p>List your sites of interest</p>
-<pre class="r"><code>#Sites of interest
-sites &lt;- c(&#39;USC00047916&#39;,&#39;USW00023259&#39;)
-cities &lt;- c(&#39;Santa Cruz&#39;,&#39;Monterey&#39;)
+<pre class="r"><code>#Sites of interest, these can be vectors of sites, I&#39;ll just do Santa Cruz here
+sites &lt;- c(&#39;USC00047916&#39;)
+cities &lt;- c(&#39;Santa Cruz&#39;)
 
 #get the current year
 current.year &lt;- format(Sys.Date(), format = &#39;%Y&#39;)
@@ -354,9 +354,9 @@ ytd &lt;- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = &#39;2019-10
 </div>
 <div id="plotting-the-data" class="section level2">
 <h2>Plotting the data</h2>
-<p>I used for loops, there are probably much more efficient ways to do this, but this worked out ok</p>
+<p>I orginally wrote this in a for loop as I was comparing several sites, right now there is only one site, but I left the for loop structure in case it might be useful to see how it could be adapted to more sites.</p>
 <pre class="r"><code>#make two rows with one column
-par(mfrow = c(2,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))
+par(mfrow = c(1,1), mgp = c(2,0.5,0), mar = c(4,6,4,4))
 #loop through the sites
 for(i in 1:length(sites)){
 #subset the sites
