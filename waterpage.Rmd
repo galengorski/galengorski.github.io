@@ -42,4 +42,4 @@ output:
 
 <img src="images/water_data/monthly_precip.jpeg" style="width:60%; height = 100px; margin-left: 20px" align="left">
 
-#### Monthly precipitation totals for Santa Cruz. 2020 has been all over the place! Find the code for these plots [_here_](precip_plotting.html)
+#### Average monthly precipitation totals for Santa Cruz from 1980-2020, with Water Year 2020 shown in blue circles. This year has been one of extremes, with December a near record wet month and February a near record dry one. Such is life in California, where extremes are the norm! Find the code for these plots [_here_](precip_plotting.html)
