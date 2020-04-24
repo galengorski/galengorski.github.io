@@ -21,6 +21,19 @@ output:
 
 
 ---
+<img src="images/CoringCropped.png" style="width:30%; height = 150px; margin-right: 20px" align="right">
+
+##### I use various laboratory, field, and modeling methods to try to understand linkages between hydrology and biogeochemical cycling. My research is broadly aimed at addressing the following questions:
+
+* What are the physical, geochemical, and biological factors that control water quality in freshwater systems?
+
+* When, where and how are materials transferred between groundwater and surface water systems?
+
+* What can data synthesis tell us about how the answers to these questions change across climate, land use and lithological gradients?
+
+********
+
+
 ### Measuring denitrification during managed aquifer recharge
 
 <img src="images/PlotSampling.png" style="width:25%; height = 150px; margin-right: 20px" align="left">
