@@ -31,6 +31,9 @@ output:
 <br>
 <br>
 
+**Gorski G.**, Dailey H., Fisher A.T., Schrad N., Saltikov C. (2020) Denitrification during infiltration for managed aquifer recharge: Infiltration rate controls and microbial response. *Science of the Total Environment* [[_link_](https://authors.elsevier.com/a/1axrvB8ccoDOo)]
+
+
 **Gorski G.**, Fisher A.T., Beganskas S., Weir W., Redford K., Schmidt C., Saltikov C. (2019) Field and laboratory studies linking hydrologic, geochemical, and microbiological processes and enhanced denitrification during infiltration for managed recharge. *Environmental Science and Technology* [[_pdf_](files/Gorski_EST_2019.pdf)]
 [[_link_](https://pubs.acs.org/doi/10.1021/acs.est.9b01191)]
 
