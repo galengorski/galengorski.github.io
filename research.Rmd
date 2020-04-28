@@ -21,6 +21,19 @@ output:
 
 
 ---
+<img src="images/CoringCropped.png" style="width:30%; height = 150px; margin-right: 20px" align="right">
+
+##### I use various laboratory, field, and modeling methods to try to understand linkages between hydrology and biogeochemical cycling. My research is broadly aimed at addressing the following questions:
+
+* What are the physical, geochemical, and biological factors that control water quality in freshwater systems?
+
+* When, where and how are materials transferred between groundwater and surface water systems?
+
+* What can data synthesis tell us about how the answers to these questions change across climate, land use and lithological gradients?
+
+********
+
+
 ### Measuring denitrification during managed aquifer recharge
 
 <img src="images/PlotSampling.png" style="width:25%; height = 150px; margin-right: 20px" align="left">
@@ -30,6 +43,9 @@ output:
 
 <br>
 <br>
+
+**Gorski G.**, Dailey H., Fisher A.T., Schrad N., Saltikov C. (2020) Denitrification during infiltration for managed aquifer recharge: Infiltration rate controls and microbial response. *Science of the Total Environment* [[_link_](https://authors.elsevier.com/a/1axrvB8ccoDOo)]
+
 
 **Gorski G.**, Fisher A.T., Beganskas S., Weir W., Redford K., Schmidt C., Saltikov C. (2019) Field and laboratory studies linking hydrologic, geochemical, and microbiological processes and enhanced denitrification during infiltration for managed recharge. *Environmental Science and Technology* [[_pdf_](files/Gorski_EST_2019.pdf)]
 [[_link_](https://pubs.acs.org/doi/10.1021/acs.est.9b01191)]
