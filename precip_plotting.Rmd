@@ -45,7 +45,7 @@ Use the `meteo_pull_monitors` fucntion from the rnoaa package to download both t
 ```{r, eval = T, message = F}
 
 #clear your cache, this is where the data will be stored
-#meteo_clear_cache()
+meteo_clear_cache()
 
 #pull the precip data for both sites at once for 1980 to the present day
 all.stat <- meteo_pull_monitors(sites, keep_flags = FALSE, date_min = '1980-10-01', date_max = Sys.Date(), var = 'PRCP')
@@ -157,8 +157,8 @@ site.myr.mean <- aggregate(site$prcp, by = list(site$myr), FUN = 'sum')
   points(5,feb.myr[grepl(current.wateryear, feb.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
   points(6,mar.myr[grepl(current.wateryear, mar.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
   points(7,apr.myr[grepl(current.wateryear, apr.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
-  # points(8,may.myr[grepl(current.wateryear, may.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
-  # points(9,jun.myr[grepl(current.wateryear, jun.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
+  points(8,may.myr[grepl(current.wateryear, may.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
+  points(9,jun.myr[grepl(current.wateryear, jun.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
   # points(10,jul.myr[grepl(current.wateryear, jul.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
   # points(11,aug.myr[grepl(current.wateryear, aug.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
   # points(12,sep.myr[grepl(current.wateryear, sep.myr$Group.1),]$x, bg = 'dodgerblue', pch = 21, cex = 1.5)
