@@ -7,7 +7,7 @@ output:
     toc_depth: 3
     toc_float:
       collapsed: false
-name: "my-website"
+name: "Galen Gorski Website"
 navbar:
   title: ""
   left:

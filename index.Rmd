@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Galen Gorski"
 output:
   html_document:
     css:  index.css
@@ -10,7 +10,6 @@ output:
 <br>
 <br>
 
-# [Galen Gorski](https://galengorski.github.io) 
 ### PhD Candidate 
 ### [UC Santa Cruz](https://www.ucsc.edu/) [Earth and Planetary Sciences Deparment](https://eps.ucsc.edu/)
 
