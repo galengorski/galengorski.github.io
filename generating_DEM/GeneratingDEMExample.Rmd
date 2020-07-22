@@ -1,0 +1,58 @@
+---
+title: "Generating a DEM for a polygon"
+author: "GG"
+date: "6/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+I have found the elevatr package really useful for downloading digital elevation models (DEMs) for areas that you are interested in. In this short tutorial, I will demonstrate how to download a DEM using the elevatr package and then clip it to a polygon of interest, in this case a watershed. [_Click here_](https://rdrr.io/cran/elevatr/) for more information on the elevatr package. 
+
+To get started make sure you have a spatial polygon that represents the area you are interested in. This can be a .shp file from ESRI ArcGIS or a vector file from other programs. For this tutorial it just needs to be able to be read by the [_sf package_](https://r-spatial.github.io/sf/). I am going to use a watershed in Iowa.
+
+Load packages
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+library(sf)
+library(mapview)
+library(elevatr)
+library(raster)
+```
+
+
+Read in the watershed outline
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+setwd("~/Google Drive File Stream/My Drive/UCSC Google Drive/Projects/Extra/Website/Soil_Example/")
+vm <- st_read("vanmeter.shp")
+```
+
+View the watershed
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+mapview(vm)
+```
+
+Download the DEM, the z parameter controls the resolution of the DEM. For the size of this watershed ~9,000 km2 we'll use z = 10, which will give us a roughly 50m resolution
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+vm_dem <- get_elev_raster(vm,z=10)
+```
+
+View the watershed overlaid on the downloaded DEM
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+mapview(vm_dem)+
+  mapview(vm, col.regions = 'transparent', alpha.regions = 0, lwd = 3)
+```
+
+Clip the DEM to the outline of the watershed the mask function from the raster package
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+vm_clipped <- mask(vm_dem, vm)
+```
+
+Now view the final results
+```{r, echo = T, eval = T, cache = F, message = F, warning = F}
+mapview(vm_clipped, na.color = 'transparent')+
+  mapview(vm, col.regions = 'transparent', alpha.regions = 0, lwd = 3)
+```
+

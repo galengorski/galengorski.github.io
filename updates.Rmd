@@ -22,7 +22,15 @@ output:
 
 
 ---
+## 7/20/2020
+<img src="images/RaccoonMap.png" style="width:25%; height = 80px; margin-right: 20px" align="right">
 
+#### I have been working with a lot of spatial lately, and with the quarentine I haven't been able to access ArcGIS on my campus windows machines. This has forced me to learn how to work with spatial data in R and QGIS. I have found ways to do almost anything that I could do with ArcGIS, and all for free! [_Here is a markdown document_](generating_DEM/GeneratingDEMExample.html) with an example of a couple of the packages that I have found really useful. I use the [_elevatr package_](https://cran.r-project.org/web/packages/elevatr/elevatr.pdf), which downloads digital elevation models (DEMs) for a region given points or a polygon (like the region to the right), and the [_mapview package_](https://r-spatial.github.io/mapview/), which is really useful for quickly and interactively viewing spatial. Additionally, [_here is a list of resources_](Resources/SpatialDataResources.html) that I have found particlarly useful in understanding and working with spatial data in R.
+
+<br>
+<br>
+<br>
+<br>
 
 ## 4/14/2020
 <img src="images/STOTEN_TOC.gif" style="width:40%; height = 100px; margin-right: 20px" align="left">
