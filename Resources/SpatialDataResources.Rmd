@@ -1,0 +1,14 @@
+---
+title: "Working with spatial data in R -- Resources"
+author: "GG"
+date: "7/21/2020"
+output: html_document
+---
+Here are some resources that I have found particularly useful in learning how to work with spatial data in R:<br>
+<https://rspatial.org/raster/index.html><br>
+<https://cengel.github.io/R-spatial/><br>
+<https://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html><br>
+<https://geocompr.robinlovelace.net/><br>
+<https://mgimond.github.io/Spatial/reading-and-writing-spatial-data-in-r.html><br>
+<http://matthewrvross.com/active.html><br>
+
