@@ -32,6 +32,16 @@ output:
 <br>
 <br>
 
+## 5/15/2020
+<img src="images/ESDL.png" style="width:15%; height = 50px; margin-right: 20px" align="right">
+
+#### I am super excited to join [_The Environmental System Dynamics Lab_](http://www.esdlberkeley.com/) led by Dr. Laurel Larsen at UC Berkeley. I will be a post-doc, starting in January 2021, working on a project funded by a USGS Powell Grant in collaboration with the USGS and others. The project will focus on understanding key watershed storage parameters and transit time distributions across environmental, geologic, and anthropogenic gradients using a novel database of discharge time series and storage timescales. 
+
+<br>
+<br>
+<br>
+<br>
+
 ## 4/14/2020
 <img src="images/STOTEN_TOC.gif" style="width:40%; height = 100px; margin-right: 20px" align="left">
 
