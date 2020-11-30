@@ -35,7 +35,7 @@ output:
 
 #### I am interested in issues related to water quantity and quality 
 #### in natural and managed landscapes. 
-#### I work with Andrew Fisher and the rest of the UCSC Hydrogeology Team 
+#### I work with Laurel Larsen and the rest of the UC Berkeley ESDL Team 
 #### to understand fundemental connections between 
 #### hydrologic and biogeochemical cycling. 
 #### I use a combination of field, lab and modeling methods, 
