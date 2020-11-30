@@ -22,8 +22,8 @@ output:
 
 
 ---
-## 7/20/2020
-<img src="images/RaccoonMap.png" style="width:25%; height = 80px; margin-right: 20px" align="right">
+## 06/20/2020
+<img src="images/RaccoonMap.png" style="width:25%; height = 80px; margin-right: 20px" align="left">
 
 #### I have been working with a lot of spatial data lately, and with the quarentine I haven't been able to access ArcGIS on my campus windows machine. This has forced me to learn how to work with spatial data in R and QGIS. I have found ways to do almost anything that I could do with ArcGIS, and all for free! [_Here is a markdown document_](generating_DEM/GeneratingDEMExample.html) with an example of a couple of the packages that I have found really useful. I use the [_elevatr package_](https://cran.r-project.org/web/packages/elevatr/elevatr.pdf), which downloads digital elevation models (DEMs) for a region given points or a polygon (like the region to the right), and the [_mapview package_](https://r-spatial.github.io/mapview/), which is really useful for quickly and interactively viewing spatial data. Additionally, [_here is a list of resources_](Resources/SpatialDataResources.html) that I have found particlarly useful in understanding and working with spatial data in R.
 
@@ -32,7 +32,7 @@ output:
 <br>
 <br>
 
-## 5/15/2020
+## 05/15/2020
 <img src="images/ESDL.png" style="width:15%; height = 50px; margin-right: 20px" align="right">
 
 #### I am super excited to join [_The Environmental System Dynamics Lab_](http://www.esdlberkeley.com/) led by Dr. Laurel Larsen at UC Berkeley. I will be a post-doc, starting in January 2021, working on a project funded by a USGS Powell Grant in collaboration with the USGS and others. The project will focus on understanding key watershed storage parameters and transit time distributions across environmental, geologic, and anthropogenic gradients using a novel database of discharge time series and storage timescales. 
@@ -42,7 +42,7 @@ output:
 <br>
 <br>
 
-## 4/14/2020
+## 04/14/2020
 <img src="images/STOTEN_TOC.gif" style="width:40%; height = 100px; margin-right: 20px" align="left">
 
 #### Check out our [_new paper_](https://authors.elsevier.com/a/1axrvB8ccoDOo) that was just published in Science of the Total Environnment looking at the infiltration rate controls on denitrification during infiltration. We designed a way to collect intact sediment cores and pump artificial groundwater through them in the lab. Then we measured the changes in nitrate and carbon as water flowed through the soils at different rates. We also looked at the response from the soil microbial populations and it was a surpringly strong signal. Then, we added woodchips to see if that would jump start the denitrification process and it did! Results from this study and others like it are helping to develop technologies to improve groundwater quality through the use of managed aquifer recharge.
@@ -56,7 +56,7 @@ output:
 
 
 
-## 3/2/2020
+## 03/02/2020
 <img src="images/SCMonthlyPrecip.gif" style="width:40%; height = 100px; margin-right: 20px" align="right">
 
 #### As of the end of February Santa Cruz has received 4,280 mm of precipitation in water year 2020, that's just 75% of our average annual value up to that date. In Santa Cruz, January and February are generally our wettest months accounting for almost 40% of the annual rainfall on average. February was really dry (and beautiful), making it feel like it has been a particularly dry year overall, but I think this might just be a function of recency bias. January was a little below average for the area, and December was anomalously wet. In places like California, where extremes in precipitation are the expectation, it can be hard to gauge how far we've deviated from the norm without looking at the numbers. Global climate models can't seem to agree on where we will see increases and decreases in overall precipiation with climate change, but there is concensus that intensity and variability of hydrologic extremes will continue to increase. 
@@ -69,7 +69,7 @@ output:
 
 
 
-## 1/20/2020
+## 01/20/2020
 
 <img src="images/AppFigure.gif" style="width:70%; height = 200px; margin-right: 20px" align="left">
 
@@ -111,7 +111,7 @@ output:
 
 
 
-## 9/12/2019
+## 09/12/2019
 
 <img src="images/Arsenic.gif" style="width:45%; height = 150px; margin-right: 20px" align="right">
 
@@ -126,7 +126,7 @@ output:
 
 
 
-## 8/24/2019
+## 08/24/2019
 
 #### I just got back from a few weeks visiting [_Rachel Lauer_](https://www.lauer-geofluids.xyz) and her lab group at the University of Calgary. I went up to see how they were using near-surface geophysical techniques in groundwater studies, and to try and learn some methods that could be useful to our work in California. Her lab has a bunch of really cool projects in some beautiful locations!
 
@@ -138,7 +138,7 @@ knitr::include_graphics("images/CanadaImages.gif")
 <br>
 
 
-## 7/29/2019
+## 07/29/2019
 
 <img src="images/TOC_Figure.gif" style="width:30%; height = 150px; margin-right: 20px" align="right">
 
@@ -147,21 +147,21 @@ knitr::include_graphics("images/CanadaImages.gif")
 <br>
 <br>
 
-## 6/22/2019
+## 06/22/2019
 
 #### With a team of grad students and professors, helped [_Andria Green_](https://andigreene.weebly.com/) construct boardwalks in Elkhorn Slough. She will be studying nitrogen cycling dynamics in various tidally influenced areas of slough.
 
 <br>
 <br>
 
-## 6/13/2019
+## 06/13/2019
 
 #### Finished TAing ESCI100, Intro to Environmental Systems, a calculus based modeling class looking at budgets and environmental processes. We only had four students, so they each got a lot of attention.
 
 <br>
 <br>
 
-## 5/24/2019
+## 05/24/2019
 
 #### Gave two talks at the Internationl Symposium for Managed Aquifer Recharge in Madrid. One talk was focused mapping denitrification across landscapes ([_slides here_](files/ISMAR_DenitMapping_Presentation.pdf)) and the other talk was on the recharge suitability web application that I developed ([_slides here_](files/ISMAR_AppPresentation.pdf)). The conference was very international, and it was exciting to see MAR projects from all over the world. It was also held in an old elevator factory!
 
@@ -171,7 +171,7 @@ knitr::include_graphics("images/ISMAR_2019.JPG")
 <br>
 <br>
 
-## 2/5/2019
+## 02/05/2019
 
 #### Attending a workshop in Nicosia, Cyprus with regional collaborators to help develop maps and modeling products for groundwater recharge suitability in the Middle East and North Africa. The workshop was part of a larger collaboration between US-AID, USGS, and the countries of Jordan, Lebanon, Palestine and other regional partners. Energizing to talk to folks from other parts of the world interested in similar topics!
 
