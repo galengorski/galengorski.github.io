@@ -25,9 +25,10 @@ output:
 <img src="images/GG_Storrs.gif" style="width:60%; height = 150px; margin-right: 20px" align="right">
 
 ### Galen Gorski
-### Dept. of Earth and Planetary Sciences
-### 1156 High Street 
-### Santa Cruz CA 95060
+### Dept. of Geography
+### McCone Hall 120 Haviland Path 
+### Berkeley, CA 94720
 
-### ggorski@ucsc.edu
+
+### galengorski@berkeley.edu
 
