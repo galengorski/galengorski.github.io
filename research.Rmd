@@ -19,30 +19,66 @@ output:
 <br>
 <br>
 
-
----
-<img src="images/CoringCropped.png" style="width:30%; height = 150px; margin-right: 20px" align="right">
-
-##### I use various laboratory, field, and modeling methods to try to understand linkages between hydrology and biogeochemical cycling. My research is broadly aimed at addressing the following questions:
-
-* What are the physical, geochemical, and biological factors that control water quality in freshwater systems?
-
-* When, where and how are materials transferred between groundwater and surface water systems?
-
-* What can data synthesis tell us about how the answers to these questions change across climate, land use and lithological gradients?
-
+## Overview
 ********
 
+<img src="images/Democrat.jpg" style="width:40%; height = 150px; margin-right: 20px" align="right">
+
+##### As water flows across and through our landscapes, the timing, frequency and magnitude of flow is often tightly linked to mobilization and processing of key water quality constiuents such as nutrients and metals. I use a mixture of laboratory, field, and modeling approaches to identify, quantify, and understand these linkages in natural and managed landscapes. My research aims to further our understanding of hydrologic systems while helping to better managed precious resources. My research is broadly aimed at addressing the following questions:
+
+##### * What are the physical, geochemical, and biological factors that control water quality in freshwater systems?
+
+##### * When, where and how are materials transferred between groundwater and surface water systems?
+
+##### * What can data synthesis tell us about how the answers to these questions change across climate, land use and lithological gradients?
+
+<br>
+<br>
+<br>
+
+## Current Projects
+********
+### Using data-driven methods to understand watershed function
+
+<img src="images/TEFig.png" style="width:40%; height = 250px; margin-right: 20px" align="right" alt="from Tennant WRR 2020">
+
+##### How long does it take for stream flow to peak after it rains? When do solute concentrations return to baseline after an event? These time scales are non-stationary, depend on antecedent conditions, and vary based on watershed characteristics such as lithology, land use, and climate. Traditional processed-based models often struggle to describe these time scales accurately because of data requirements or the need to define functional relationships. We are using data-driven methods from information theory such as transfer entropy and mutual information to infer the timing and relationships between key variables in hydrologic systems. Additionally, we are using deep learning methods such as Long Short Term Memory (LSTMs) to develop predictive hydrologic and hydrochemical models that are flexible and adaptable to many different watersheds. 
+
+<br>
+<br>
+
+### Concentration-discharge relationships with high-frequency water quality time series
+
+<img src="images/cqhsit01.png" style="width:40%; height = 150px; margin-right: 20px" align="right">
+
+##### In agricultural watersheds excess nutrient mobilization can pose significant threats to local and regional water quality. The timing and magnitude of nutrient mobilization in these watersheds are driven by a complex combination of anthropogenic, hydrologic, and biogeochemical factors that operate across a range of spatial and temporal scales. We are analyzing data from recently deployed high-frequency, in-situ water quality sensors to better understand water quality dynamics at annual, seasonal, and individual event time scales. The tendency for a watershed to store or transmit solutes and nutrients across these time scales can be characterized by the relationship between concentration (c) and discharge (Q). Using publicly available data, we are compiling a database of c-Q relationships at various spatial and temporal scales to better understand how these dynamics can serve as a window into hydrologic and biogeochemical processes across landscapes.
+
+**Gorski G.**, Zimmer M. (Accepted with minor revisions) Hydrologic regimes drive nitrate export in human impacted watersheds. *Hydrology and Earth System Science* [[_link to preprint_](https://hess.copernicus.org/preprints/hess-2020-562/)]
+
+<br>
+<br>
+
+### Developing landscape scale models using experimental data
+
+<img src="images/ModelingFramework.gif" style="width:30%; height = 150px; margin-left: 20px" align="right">
+
+##### Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. 
+
+**Gorski G.,** Fisher A.T., Beganskas S., Dailey H., Schmidt C. (In Review) Mapping the potential for denitrification during infiltration with machine learning informed by field and laboratory experiments. *Environmental Science and Technology*
+
+**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Characterizing spatial variability in denitrification potential under heterogeneous land use and precipitation patterns. *Poster presentation at AGU Fall Meeting 2019* [[_pdf_](files/AGU_2019_Poster.png)]
+
+**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Using machine learning to incorporate potential water quality improvements for mapping MAR suitability. *Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/Gorski_ISMAR_DenitMapping_Presentation.pdf)]
+
+<br>
+<br>
 
 ### Measuring denitrification during managed aquifer recharge
 
-<img src="images/PlotSampling.png" style="width:25%; height = 150px; margin-right: 20px" align="left">
+<img src="images/PlotSampling.png" style="width:35%; height = 150px; margin-right: 20px" align="right">
 
 
 ##### Managed aquifer recharge (MAR) is a common technique for augmenting groundwater supplies, but it is important to ensure that the water used for infiltration doesn't harm ambient groundwater quality. Under certain conditions, contaminants such as nitrate (NO~3~) can be removed as water infiltrates through shallow soils during MAR via a process called denitrification. Through lab, field, and modeling studies we are investigating how controlling factors such as infiltration rate and the amount of labile carbon can affect denitrification during infiltration. 
-
-<br>
-<br>
 
 **Gorski G.**, Dailey H., Fisher A.T., Schrad N., Saltikov C. (2020) Denitrification during infiltration for managed aquifer recharge: Infiltration rate controls and microbial response. *Science of the Total Environment* [[_link_](https://authors.elsevier.com/a/1axrvB8ccoDOo)]
 
@@ -56,34 +92,9 @@ Beganskas S., **Gorski G.**,Weathers T., Fisher A.T., Schmidt C., Saltikov C.W.,
 
 <br>
 <br>
-
-********
-### Developing landscape scale models using experimental data
-
-<img src="images/ModelingFramework.gif" style="width:25%; height = 150px; margin-left: 20px" align="right">
-
-<br>
-<br>
-<!-- <style> -->
-<!-- div.blue { background-color:white; border-radius: 5px; padding: 20px;} -->
-<!-- </style> -->
-<!-- <div class = "blue"> -->
-
-
-
-##### Denitrification (and other biogeochemical processes) vary from site to site based on a host of factors including soil grain size, available organic carbon, precipiation, climate, water chemistry, microbial community structure and many others. This makes it difficult to develop process-based models that are robust at scales larger than a field site, as these factors have considerable spatial variability. To address this, we leverage the measurements that we have collected at multiple field sites to develop a modeling framework that combines a process-based understanding with machine learning methods to understand how denitrification varies across landscapes under varying climatic conditions. 
-
-
-**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Characterizing spatial variability in denitrification potential under heterogeneous land use and precipitation patterns. *Poster presentation at AGU Fall Meeting 2019* [[_pdf_](files/AGU_2019_Poster.png)]
-
-**Gorski G.,** Fisher A.T., Beganskas S., Schmidt C., Dailey H. Using machine learning to incorporate potential water quality improvements for mapping MAR suitability. *Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/Gorski_ISMAR_DenitMapping_Presentation.pdf)]
-
-
-<!-- </div> -->
-<br>
-<br>
 <br>
 
+## Past Projects
 ********
 
 ### Groundwater recharge suitability mapping in the MENA region
@@ -96,17 +107,24 @@ The tool is called **M**ulti-factor **A**nalysis for **R**echarge **Map**ping **
 
 More information can be found on [_my github page_](https://github.com/galengorski/MARMapS)
 
-**Gorski, G.,** van der Valk, M. Producing more interpretable maps of managed aquifer recharge suitability by visualizing sensitivity to subjective choices during mapmaking.*Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/ISMAR_AppPresentation.pdf)] 
+**Gorski G.,** van der Valk, M. Producing more interpretable maps of managed aquifer recharge suitability by visualizing sensitivity to subjective choices during mapmaking.*Oral presentation at the International Symposium for Managed Aquifer Recharge* (Madrid, Spain May 2019) [[_pdf_](files/ISMAR_AppPresentation.pdf)] 
 
 
 <br>
 <br>
+
+### Water vapor isotopes
+
+<img src="images/watervapor.png" style="width:40%; height = 150px; margin-right: 20px" align="left">
+
+##### Several independent lines of evidence suggest an intensification of the hydrologic cycle due to climate change. Stable isotopes of water vapor provide a unique window into perturbations of the hydrologic cycle on various time scales. Records of water vapor isotopes can be used to quantify fluxes, and partition hydrologic feedbacks between the atmosphere and the land surface. I helped collect a high-resolution record of water vapor isotope measurements in Salt Lake City, Utah that revealed the build-up of fossil fuel-derived water vapor during times of atmospheric inversion when CO2 concentrations peaked.  Modeling suggested that up to 13% of the atmospheric moisture during these periods was from fossil fuel-derived water vapor, a huge source!
+
+**Gorski G.**, Strong C., Good S.P., Bares R., Ehleringer J.R., Bowen G.J. (2015) Vapor hydrogen and oxygen isotopes reflect water of combustion in the urban atmosphere. *Proceedings of the National Academy of Sciences* [[_link_](https://www.pnas.org/content/112/11/3247)]
+
+Related:
+
+Griffis T.J., Wood J.D., Baker J.M., Lee X., Xiao K., Chen Z., Welp L.R., Schultz N.M., **Gorski G.**, Chen M., Nieber J., (2016) Investigating the source, transport, and isotope composition of water vapor in the planetary boundary layer. *Atmospheric Chemistry and Physics Discussion* [[_link_](https://acp.copernicus.org/articles/16/5139/2016/)]
+
+
 <br>
 
-********
-
-### Concentration discharge relationships
-
-<img src="images/BP.jpg" style="width:20%; height = 150px; margin-right: 20px" align="right">
-
-##### The tendency of a catchment to store or transmit solutes and nutrients can be characterized by concentration discharge (c-Q) relationships of the watershed drainages. On long time scales, the slope of concentration and discharge plotted in log-log space is thought to be near zero (chemostatic). However at shorter time scales (event to seasonal), c-Q slope can significantly deviate from zero (chemodynamic). Short term c-Q dynamics are responsive to storm intensity, antecedant moisture, source area landuse and may reflect differences between hydrologic routing and biogeochemical cycling across watersheds with different fundemental characteristics. Using publicly available data, we are compiling a database of c-Q relationships at various spatial and temporal scales to better understand how these dynamics can serve as a window into hydrologic and biogeochemical processes across landscapes.

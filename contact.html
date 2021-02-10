@@ -13,6 +13,7 @@
 
 <title>contact.utf8</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -24,6 +25,16 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,6 +80,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 <link rel="stylesheet" href="contact.css" type="text/css" />
 
@@ -296,7 +308,7 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="http://github.com/galengorski">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fas fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -322,17 +334,14 @@ $(document).ready(function () {
 <div id="galen-gorski" class="section level3">
 <h3>Galen Gorski</h3>
 </div>
-<div id="dept.-of-earth-and-planetary-sciences" class="section level3">
-<h3>Dept. of Earth and Planetary Sciences</h3>
+<div id="dept.-of-geology" class="section level3">
+<h3>Dept. of Geology</h3>
 </div>
-<div id="high-street" class="section level3">
-<h3>1156 High Street</h3>
+<div id="uc-berkeley" class="section level3">
+<h3>UC Berkeley</h3>
 </div>
-<div id="santa-cruz-ca-95060" class="section level3">
-<h3>Santa Cruz CA 95060</h3>
-</div>
-<div id="ggorskiucsc.edu" class="section level3">
-<h3><a href="mailto:ggorski@ucsc.edu" class="email">ggorski@ucsc.edu</a></h3>
+<div id="galengorskiberkeley.edu" class="section level3">
+<h3><a href="mailto:galengorski@berkeley.edu" class="email">galengorski@berkeley.edu</a></h3>
 </div>
 </div>
 
@@ -345,7 +354,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

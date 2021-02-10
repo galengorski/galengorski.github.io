@@ -43,3 +43,9 @@ a:visited{
   color:#00D5FF;
 }
 
+
+.right-border {
+    float: right;
+    padding: 5px;
+}
+
