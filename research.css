@@ -33,7 +33,12 @@ h4 {
 h5 {
   color:Black;
   font-weight:400;
-  text-align:left;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 a:link{
