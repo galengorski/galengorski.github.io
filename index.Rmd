@@ -35,10 +35,12 @@ output:
 
 #### I am interested in issues related to water quantity and quality 
 #### in natural and managed landscapes. 
-#### I work with Laurel Larsen and the rest of the UC Berkeley ESDL Team 
-#### to understand fundemental connections between 
-#### hydrologic and biogeochemical cycling. 
-#### I use a combination of field, lab and modeling methods, 
+#### I work within the Analysis and Prediction Division of the 
+#### Water Mission Area at the USGS to understand fundemental connections between 
+#### hydrologic and biogeochemical cycling. I use data-driven tools like
+#### machine learning, and information theory to model and understand how our
+#### our hydrologic systems are changing and how we can best manage them in the future.
+#### In the past, I have used a combination of field, lab and modeling methods, 
 #### and I am particularly interested in developing understanding 
 #### at multiple different scales from centimeter to continental.
 
