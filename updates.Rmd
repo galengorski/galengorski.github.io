@@ -23,6 +23,41 @@ output:
 
 
 ---
+<br>
+<br>
+<br clear="all">
+
+## 3/30/2021
+<div style="float:right; width:35%; height = 80px; margin-left: 20px;">
+![[_Colah's blog_](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)](images/LSTM3-var-GRU.jpeg)
+
+</div>
+
+#### As part of my postdoc project, I have become very interested in different machine learning techniques for time series predictions and forecasting. The technique getting the most buzz right now in the hydrology world is called Long Short-Term Memory (LSTM for short). As far as I can tell [_this study by Kratzert et al_](https://hess.copernicus.org/articles/22/6005/2018/) was one of the papers that really kicked it off. Although the algorithm was initially developed for natural language processing (think speech recognition and translation), it has natural application to hydrology too. The reason is because, as the name suggests, it is able to store information from both long ago and more recent history to make predictions. This is helpful when for example, snow that fell several months ago is melting and contributing to streamflow today. Conceptually it makes a lot of sense, but it can be difficult to dive into the nitty gritty, especially if you're a relative beginner like me. Here are some resources and blog posts that I have found particularly helpful:
+
+- Blog posts that do a nice job of building LSTMs inuition off of recurrent neural networks:
+  - [_karpathy blog_](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+  - [_Colah's blog_](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+  - [_machine learning mastery_](https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/)
+- A nice example from [_cnvrg.io_](https://cnvrg.io/pytorch-lstm/) that works through the gates step by step and then goes through the implementation on pytorch.
+- A nice application to streamflow forecasting: [_Feng et al. in Water Resources Research_](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019WR026793)
+
+<br>
+<br>
+<br clear="all">
+
+
+## 1/31/2021
+<div style="float:left; width:35%; height = 80px; margin-right: 20px;">
+![ ](images/berkeley.jpeg)
+</div>
+
+#### I feel really luck to start an incredible postdoc position this month. I'm working in [_Dr. Laurel Larsen's_](http://www.esdlberkeley.com/) lab at UC Berkeley in the Department of Geography. Her group conducts research across a broad range of topics from landslide iniaition proceses, to sediment particle dynamics, to watershed modeling. I will be working with long term datasets of flow and instream solutes to develop data driven models of watershed function and nutrient dynamics. I'm hoping to apply methods from machine learning and information theory to characterize and predict watershed behavior. I'll be doing the postdoc remotely from Washington D.C., but it's still cool to be a part of UC Berkeley.
+
+<br>
+<br>
+<br clear="all">
+
 ## 9/28/2020
 <div style="float:right; width:25%; height = 80px; margin-left: 20px;">
 ![Jenny Pensky, Araceli Serrano, and others  ](images/iceberg.jpg)
